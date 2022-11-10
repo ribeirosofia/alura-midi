@@ -22,9 +22,14 @@ function playToim(){
     document.querySelector('#som_tecla_toim').play();
 }
 
+function playPsh(){
+    document.querySelector('#som_tecla_psh').play();
+}
+
 document.querySelector('.tecla_pom');
 document.querySelector('.tecla_clap');
 document.querySelector('.tecla_tim');
 document.querySelector('.tecla_puff');
 document.querySelector('.tecla_splash');
 document.querySelector('.tecla_toim');
+document.querySelector('.tecla_psh');
