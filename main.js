@@ -14,7 +14,12 @@ function playPuff(){
     document.querySelector('#som_tecla_puff').play();
 }
 
+function playSplash(){
+    document.querySelector('#som_tecla_splash').play();
+}
+
 document.querySelector('.tecla_pom');
 document.querySelector('.tecla_clap');
 document.querySelector('.tecla_tim');
 document.querySelector('.tecla_puff');
+document.querySelector('.tecla_splash');
