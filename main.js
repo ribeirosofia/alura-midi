@@ -1,13 +1,10 @@
 function playSound(AudioSelector){
    const element =  document.querySelector(AudioSelector);
-   if(element === null){
+   
+    if(element != null && element.localName === 'audio'){ 
+       element.play();     
+   }else{
         console.log('Elemento não encontrado');
-   }
-
-   if(element != null){ 
-      if(element.localName === 'audio'){
-            element.play();
-        }
    }
 }
 
