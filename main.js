@@ -10,12 +10,9 @@ for(let i = 0; i < keyArray.length; i++){
 
    const key = keyArray[i];
    const instrument = key.classList[1];
-   const idAudio = `#som_${instrument}`;
-
-    //   console.log(idAudio);
+   const idAudio = `#som_${instrument}`; //template string
 
     key.onclick = function(){
         playSound(idAudio);
     }
-    // console.log(i);
 }
