@@ -1,5 +1,14 @@
-function playSound(idAudioElement){
-    document.querySelector(idAudioElement).play(); 
+function playSound(AudioSelector){
+   const element =  document.querySelector(AudioSelector);
+   if(element === null){
+        console.log('Elemento não encontrado');
+   }
+
+   if(element != null){ 
+      if(element.localName === 'audio'){
+            element.play();
+        }
+   }
 }
 
 const keyArray = document.querySelectorAll('.tecla');
@@ -15,7 +24,7 @@ for(let i = 0; i < keyArray.length; i++){
     key.onclick = function(){
         playSound(idAudio);
     }   
-    
+
     key.onkeydown = function(event){
 
         if(event.code === 'Space' || event.code === 'Enter' ){
