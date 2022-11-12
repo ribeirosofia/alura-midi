@@ -19,6 +19,11 @@ for(let i = 0; i < keyArray.length; i++){
 
         if(event.code === 'Space'){
             key.classList.add('ativa');
-        }
+        } 
+         
+    }
+
+    key.onkeyup = function(){
+      key.classList.remove('ativa');
     }
 }
