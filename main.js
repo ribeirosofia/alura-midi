@@ -14,13 +14,13 @@ for(let i = 0; i < keyArray.length; i++){
 
     key.onclick = function(){
         playSound(idAudio);
-    }
+    }   
+    
     key.onkeydown = function(event){
 
-        if(event.code === 'Space'){
+        if(event.code === 'Space' || event.code === 'Enter' ){
             key.classList.add('ativa');
-        } 
-         
+        }      
     }
 
     key.onkeyup = function(){
